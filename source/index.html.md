@@ -1,5 +1,5 @@
 ---
-title: Net Zero Insights API documentation for EPRI
+title: Net Zero Insights API documentation
 
 language_tabs:
   - shell
