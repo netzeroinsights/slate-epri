@@ -485,7 +485,7 @@ Please note that manually closing a session is not required, since it will be cl
 <div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-v</span> <span class="nt">--cookie</span> <span class="s1">'JSESSIONID=EXAMPLE_SESSION_ID'</span> <span class="se">\</span>
 <span class="nt">-X</span> POST <span class="s1">'https://api.netzeroinsights.com/epri/process'</span> <span class="se">\</span>
 <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\ </span>                
-<span class="nt">-d</span> <span class="s1">'{"companies":[{"id":"13579","name":"Net Zero Insights","website":"netzeroinsights.com"},{"id":"24680","name":"Example company","website":"example.com"}]}'</span>
+<span class="nt">-d</span> <span class="s1">'{"companies":[{"id":"13579","name":"Net Zero Insights","website":"netzeroinsights.com","linkedIn":"https://www.linkedin.com/company/netzeroinsights","text":"Some example text"},{"id":"24680","name":"Example company","website":"example.com","linkedIn":"https://www.linkedin.com/company/example","text":"Some example text"}]}'</span>
 </code></pre></div>
 <p>To request the processing of a list of companies you should use the following endpoint:</p>
 
@@ -526,20 +526,34 @@ Please note that manually closing a session is not required, since it will be cl
 <table><thead>
 <tr>
 <th>Value</th>
+<th>Required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>id</td>
+<td>Yes</td>
 <td>Unique id</td>
 </tr>
 <tr>
 <td>name</td>
-<td>Startup name</td>
+<td>Yes</td>
+<td>Company name</td>
 </tr>
 <tr>
 <td>website</td>
-<td>Startup website</td>
+<td>No</td>
+<td>Company website</td>
+</tr>
+<tr>
+<td>linkedIn</td>
+<td>No</td>
+<td>Company linkedin page</td>
+</tr>
+<tr>
+<td>text</td>
+<td>No</td>
+<td>A description of the company&#39;s main activities</td>
 </tr>
 </tbody></table>
 <h1 id='taxonomy-page'>Taxonomy Page</h1>
