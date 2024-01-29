@@ -28,6 +28,8 @@ For brevity, the possible error codes for all the calls are at the bottom of the
 
 Every endpoint is to be called starting with the domain https://api.netzeroinsights.com
 
+For testing purposes, we have a sandbox available at https://20.108.20.67
+
 # Security
 
 ## Login
