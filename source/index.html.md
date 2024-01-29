@@ -109,7 +109,7 @@ Please note that manually closing a session is not required, since it will be cl
 curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
 -X POST 'https://api.netzeroinsights.com/epri/process' \
 -H 'Content-Type: application/json' \                 
--d '{"companies":[{"id":"13579","name":"Net Zero Insights","website":"netzeroinsights.com"},{"id":"24680","name":"Example company","website":"example.com"}]}'
+-d '{"companies":[{"id":"13579","name":"Net Zero Insights","website":"netzeroinsights.com","linkedIn":"https://www.linkedin.com/company/netzeroinsights","text":"Some example text"},{"id":"24680","name":"Example company","website":"example.com","linkedIn":"https://www.linkedin.com/company/example","text":"Some example text"}]}'
 ```
 
 To request the processing of a list of companies you should use the following endpoint:
@@ -137,11 +137,13 @@ This is the payload format to be used when requesting the processing of a list o
 
 ## Company
 
-| Value                  | Description                                 |
-|------------------------|---------------------------------------------|
-| id                     | Unique id                                   |
-| name                   | Startup name                                |
-| website                | Startup website                             |
+| Value    | Required | Description                                    |
+|----------|----------|------------------------------------------------|
+| id       | Yes      | Unique id                                      |
+| name     | Yes      | Company name                                   |
+| website  | No       | Company website                                |
+| linkedIn | No       | Company linkedin page                          |
+| text     | No       | A description of the company's main activities |
 
 # Taxonomy Page
 
