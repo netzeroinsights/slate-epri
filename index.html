@@ -755,14 +755,14 @@ Please note that you should send at least one between website, linkedIn and text
 </tbody></table>
 <h2 id='taxonomy-item-relations-by-parentid'>Taxonomy Item Relations by ParentID</h2>
 <blockquote>
-<p>To get Taxonomy Graph Item Relation list by parentID, use this code:</p>
+<p>To get the list of Taxonomy Graph Item Relations by parentID, use this code:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-v</span> <span class="nt">--cookie</span> <span class="s1">'JSESSIONID=EXAMPLE_SESSION_ID'</span> <span class="se">\</span>
 <span class="nt">-X</span> GET <span class="s1">'https://api.netzeroinsights.com/taxonomy/relations/parent/1'</span> <span class="se">\</span>
 <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\ </span>                
 </code></pre></div>
 <blockquote>
-<p>In case of a 200 response, the response body will contain all the available taxonomy graph item relations, with the JSON structured like the following:</p>
+<p>In case of a 200 response, the response body will contain all the taxonomy graph item relations whose parentID is the requested one, with the JSON structured like the following:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
@@ -781,11 +781,11 @@ Please note that you should send at least one between website, linkedIn and text
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre></div>
-<p>To get all the parent-children relations of a taxonomy item you should use the following endpoint:</p>
+<p>To get all the parent-children (for a certain parent item) relations of a taxonomy item you should use the following endpoint:</p>
 
 <p><code>GET /relations/parent/{itemID}</code></p>
 
-<p>Where the parameter <code>itemID</code> is the taxonomy item ID.</p>
+<p>Where the parameter <code>itemID</code> is the parent taxonomy item ID.</p>
 
 <p>The possible response codes are:</p>
 
@@ -802,14 +802,14 @@ Please note that you should send at least one between website, linkedIn and text
 </tbody></table>
 <h2 id='taxonomy-item-relations-by-childid'>Taxonomy Item Relations by ChildID</h2>
 <blockquote>
-<p>To get Taxonomy Graph Item Relation list by childID, use this code:</p>
+<p>To get the list of Taxonomy Graph Item Relations by childID, use this code:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-v</span> <span class="nt">--cookie</span> <span class="s1">'JSESSIONID=EXAMPLE_SESSION_ID'</span> <span class="se">\</span>
 <span class="nt">-X</span> GET <span class="s1">'https://api.netzeroinsights.com/taxonomy/relations/child/24'</span> <span class="se">\</span>
 <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\ </span>                
 </code></pre></div>
 <blockquote>
-<p>In case of a 200 response, the response body will contain all the available taxonomy graph item relations, with the JSON structured like the following:</p>
+<p>In case of a 200 response, the response body will contain all the  taxonomy graph item relations whose childID is the requested one, with the JSON structured like the following:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
@@ -821,11 +821,11 @@ Please note that you should send at least one between website, linkedIn and text
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre></div>
-<p>To get all the child-parents relations of a taxonomy item you should use the following endpoint:</p>
+<p>To get all the child-parents (for a certain child item) relations of a taxonomy item you should use the following endpoint:</p>
 
 <p><code>GET /relations/child/{itemID}</code></p>
 
-<p>Where the parameter <code>itemID</code> is the taxonomy item ID.</p>
+<p>Where the parameter <code>itemID</code> is the child taxonomy item ID.</p>
 
 <p>The possible response codes are:</p>
 
