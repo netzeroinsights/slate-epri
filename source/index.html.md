@@ -145,6 +145,10 @@ This is the payload format to be used when requesting the processing of a list o
 | linkedIn | No       | Company linkedin page                          |
 | text     | No       | A description of the company's main activities |
 
+<aside class="notice">
+Please note that you should send at least one between website, linkedIn and text, otherwise it will be very hard (if not impossible) to correctly process the company.
+</aside>
+
 # Taxonomy Page
 
 Our taxonomy is a way to visualise the relation between different topics.
