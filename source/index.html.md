@@ -212,32 +212,13 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
     "label": "Solutions map",
     "description": "The Solutions Map simplifies your exploration of climate tech solutions. We've categorized over 200 solutions into Challenge Areas like Energy, Industry, Transport, and more. When you choose a solution, you can dive into its sub-solutions if they exist. You can also access insights, active investors, and information about startups and SMEs for each solution.",
     "tagID": 1399,
-    "companyCount": 39491,
-    "dealCount": 41425,
-    "totalFunding": 424336443804,
-    "totalFundingUSD": 473836670179,
     "hasChildren": true,
     "id": 347
-  },
-  {
-    "label": "Deep Dives map",
-    "description": "The Deep Dives offers a meticulous mapping of the most innovative and extensively researched fields in the realm of Climate Tech. These curated maps serve as a direct, technologically advanced interface, simplifying navigation through the intricate landscape of climate technology. Users can seamlessly delve into specific areas such as Cement and Concrete, Carbon Offset and Markets, Marine Energy, and Hydrogen, gaining valuable insights into advancements, sub-solutions, and active investors. ",
-    "tagID": 1412,
-    "companyCount": 68748,
-    "dealCount": 0,
-    "totalFunding": -9223372036854775808,
-    "totalFundingUSD": -9223372036854775808,
-    "hasChildren": true,
-    "id": 359
   },
   {
     "label": "Software map",
     "description": "The Software Map is a comprehensive visual representation that outlines the diverse array of software solutions within the climate tech landscape. This map provides a detailed overview of software applications tailored to address climate challenges across various sectors, including energy, transport, industry, food and agriculture, built environment, natural environment, and more. ",
     "tagID": 1823,
-    "companyCount": 68850,
-    "dealCount": 0,
-    "totalFunding": -9223372036854775808,
-    "totalFundingUSD": -9223372036854775808,
     "hasChildren": true,
     "id": 660
   }
@@ -281,8 +262,6 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
     "label": "Bioethanol",
     "description": "Bioethanol is produced through the fermentation of organic materials, such as crops like corn, and sugarcane, or cellulose-rich feedstocks like switchgrass. This process converts the sugars within these materials into ethanol using microorganisms. Bioethanol is a key player in the quest for sustainable transportation fuels, as it can be blended with gasoline to reduce greenhouse gas emissions and dependence on fossil fuels. When compared to other sustainable fuels like biodiesel or synthetic fuels, bioethanol has specific advantages, such as its compatibility with existing gasoline engines and infrastructure.",
     "tagID": 1093,
-    "companyCount": 0,
-    "dealCount": 0,
     "hasChildren": false,
     "id": 5
   },
@@ -290,10 +269,6 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
     "label": "Bio-Oil",
     "description": "Bio-oil is produced from biomass sources like wood chips, agricultural residues, or algae. It is typically created through a process called pyrolysis or fast pyrolysis, which involves heating biomass in the absence of oxygen to break it down into a liquid form. Bio-oil can be used as a replacement for traditional fossil fuels in applications such as power generation and heating, and it can also serve as a feedstock for the production of biofuels and other valuable chemicals. Compared to other sustainable fuels like bioethanol or biodiesel, bio-oil offers advantages such as a higher energy density and the potential for versatile applications.",
     "tagID": 1094,
-    "companyCount": 27,
-    "dealCount": 14,
-    "totalFunding": 1924706,
-    "totalFundingUSD": 2264121,
     "hasChildren": false,
     "id": 6
   }
@@ -337,10 +312,6 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
     "label": "Biofuel",
     "description": "Biofuels are produced from renewable resources, primarily plant-based feedstocks such as crops, agricultural residues, or algae. Biofuels offer a way to decarbonize sectors that are challenging to electrify, such as aviation and heavy industry, while promoting agricultural sustainability through responsible feedstock sourcing and land-use practices. Some solutions include innovative processes to convert biomass into biofuels, such as biodiesel and bioethanol, through techniques like fermentation and thermochemical conversion.",
     "tagID": 1090,
-    "companyCount": 70,
-    "dealCount": 62,
-    "totalFunding": 1188638956,
-    "totalFundingUSD": 222394728,
     "hasChildren": true,
     "id": 2
 }
