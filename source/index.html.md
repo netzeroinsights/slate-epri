@@ -172,9 +172,6 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
     "description": "Alternative fuels are at the forefront of innovation, with notable examples being biofuels and synthetic fuels. Solutions in this domain are dedicated to advancing and applying these alternatives, not only for transportation but also for broader energy applications, including electricity generation and industrial processes.",
     "tagID": 995,
     "tagName": "Alternative Fuel",
-    "rawSuggestedSearches": [
-      "{\"include\": {\"tags\": [323], \"wildcardsFields\": [\"pitchLine\"]}, \"exclude\": {\"tags\": [212, 220, 224]}}"
-    ],
     "id": 1
   },
   {
@@ -182,14 +179,6 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
     "description": "Biofuels are produced from renewable resources, primarily plant-based feedstocks such as crops, agricultural residues, or algae. Biofuels offer a way to decarbonize sectors that are challenging to electrify, such as aviation and heavy industry, while promoting agricultural sustainability through responsible feedstock sourcing and land-use practices. Some solutions include innovative processes to convert biomass into biofuels, such as biodiesel and bioethanol, through techniques like fermentation and thermochemical conversion.",
     "tagID": 996,
     "tagName": "Biofuel",
-    "rawSuggestedSearches": [
-      "{\"include\":{\"tags\":[20,374]},\"exclude\":{},\"fundingRoundInclude\":{},\"fundingRoundExclude\":{},\"investorInclude\":{},\"investorExclude\":{}}",
-      "{\"include\":{\"wildcardsFields\":[\"pitchLine\"],\"regexpFields\":[\"pitchLine\"],\"regexps\":[\"produc[a-z]{0,5}[^A-z0-9]+([A-z0-9]+[^A-z0-9]+){0,5}biofuel[a-z]{0,5}\"]},\"exclude\":{},\"fundingRoundInclude\":{},\"fundingRoundExclude\":{},\"investorInclude\":{},\"investorExclude\":{}}",
-      "{\"include\":{\"wildcardsFields\":[\"pitchLine\"],\"regexpFields\":[\"pitchLine\"],\"regexps\":[\"manufactur[a-z]{0,5}[^A-z0-9]+([A-z0-9]+[^A-z0-9]+){0,5}biofuel[a-z]{0,5}\"]},\"exclude\":{},\"fundingRoundInclude\":{},\"fundingRoundExclude\":{},\"investorInclude\":{},\"investorExclude\":{}}",
-      "{\"include\":{\"wildcardsFields\":[\"pitchLine\"],\"regexpFields\":[\"pitchLine\",\"description\"],\"regexps\":[\"offer[a-z]{0,5}[^A-z0-9]+([A-z0-9]+[^A-z0-9]+){0,5}biofuel[a-z]{0,5}\"]},\"exclude\":{},\"fundingRoundInclude\":{},\"fundingRoundExclude\":{},\"investorInclude\":{},\"investorExclude\":{}}",
-      "{\"include\":{\"tags\":[20],\"wildcards\":[\"biofuel\"],\"wildcardsFields\":[\"pitchLine\"],\"regexpFields\":[\"pitchLine\"]},\"exclude\":{},\"fundingRoundInclude\":{},\"fundingRoundExclude\":{},\"investorInclude\":{},\"investorExclude\":{}}",
-      "{\"include\":{\"wildcardsFields\":[\"pitchLine\"],\"regexpFields\":[\"pitchLine\",\"description\"],\"regexps\":[\"develop[a-z]{0,5}[^A-z0-9]+([A-z0-9]+[^A-z0-9]+){0,5}biofuel[a-z]{0,5}\"]},\"exclude\":{},\"fundingRoundInclude\":{},\"fundingRoundExclude\":{},\"investorInclude\":{},\"investorExclude\":{}}"
-    ],
     "id": 2
   }
 ]
