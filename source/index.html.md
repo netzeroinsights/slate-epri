@@ -24,7 +24,7 @@ meta:
 
 Our REST APIs give all the functionalities needed to interact with our database. All these services are exclusively usable with https standard, and only after having been authenticated.
 
-For brevity, the possible error codes for all the calls are at the bottom of the document.
+For brevity, the possible error codes for all endpoints are at the bottom of the document.
 
 Every endpoint is to be called starting with the domain https://api.netzeroinsights.com
 
@@ -123,6 +123,10 @@ The possible response codes are:
 | Response code | Meaning            |
 |---------------|--------------------|
 | 200           | Request successful |
+
+<aside class="notice">
+Please note that if even only one of the companies in the batch does not complain with the request format (for example, missing the id property), the whole batch will be rejected. 
+</aside>
 
 
 # Payloads
