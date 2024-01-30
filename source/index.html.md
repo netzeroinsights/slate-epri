@@ -145,12 +145,12 @@ This is the payload format to be used when requesting the processing of a list o
 |----------|----------|------------------------------------------------|
 | id       | Yes      | Unique id                                      |
 | name     | Yes      | Company name                                   |
-| website  | No       | Company website                                |
-| linkedIn | No       | Company linkedin page                          |
-| text     | No       | A description of the company's main activities |
+| website  | *        | Company website                                |
+| linkedIn | *        | Company linkedin page                          |
+| text     | *        | A description of the company's main activities |
 
 <aside class="notice">
-Please note that you should send at least one between website, linkedIn and text, otherwise it will be very hard (if not impossible) to correctly process the company.
+At least one between website, linkedIn and text is mandatory. Failing to provide at least one of the three will cause the batch of companies to be rejected.
 </aside>
 
 # Taxonomy Page
