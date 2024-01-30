@@ -331,7 +331,7 @@ The possible response codes are:
 
 ## Taxonomy Item Relations by ParentID
 
-> To get Taxonomy Graph Item Relation list by parentID, use this code:
+> To get the list of Taxonomy Graph Item Relations by parentID, use this code:
 
 ```shell
 curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
@@ -339,7 +339,7 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
 -H 'Content-Type: application/json' \                 
 ```
 
-> In case of a 200 response, the response body will contain all the available taxonomy graph item relations, with the JSON structured like the following:
+> In case of a 200 response, the response body will contain all the taxonomy graph item relations whose parentID is the requested one, with the JSON structured like the following:
 
 ```json
 [
@@ -360,11 +360,11 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
 ]
 ```
 
-To get all the parent-children relations of a taxonomy item you should use the following endpoint:
+To get all the parent-children (for a certain parent item) relations of a taxonomy item you should use the following endpoint:
 
 `GET /relations/parent/{itemID}`
 
-Where the parameter `itemID` is the taxonomy item ID.
+Where the parameter `itemID` is the parent taxonomy item ID.
 
 The possible response codes are:
 
@@ -374,7 +374,7 @@ The possible response codes are:
 
 ## Taxonomy Item Relations by ChildID
 
-> To get Taxonomy Graph Item Relation list by childID, use this code:
+> To get the list of Taxonomy Graph Item Relations by childID, use this code:
 
 ```shell
 curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
@@ -382,7 +382,7 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
 -H 'Content-Type: application/json' \                 
 ```
 
-> In case of a 200 response, the response body will contain all the available taxonomy graph item relations, with the JSON structured like the following:
+> In case of a 200 response, the response body will contain all the  taxonomy graph item relations whose childID is the requested one, with the JSON structured like the following:
 
 ```json
 [
@@ -396,11 +396,11 @@ curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
 ]
 ```
 
-To get all the child-parents relations of a taxonomy item you should use the following endpoint:
+To get all the child-parents (for a certain child item) relations of a taxonomy item you should use the following endpoint:
 
 `GET /relations/child/{itemID}`
 
-Where the parameter `itemID` is the taxonomy item ID.
+Where the parameter `itemID` is the child taxonomy item ID.
 
 The possible response codes are:
 
