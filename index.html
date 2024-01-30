@@ -379,7 +379,7 @@
         <h1 id='introduction'>Introduction</h1>
 <p>Our REST APIs give all the functionalities needed to interact with our database. All these services are exclusively usable with https standard, and only after having been authenticated.</p>
 
-<p>For brevity, the possible error codes for all the calls are at the bottom of the document.</p>
+<p>For brevity, the possible error codes for all endpoints are at the bottom of the document.</p>
 
 <p>Every endpoint is to be called starting with the domain https://api.netzeroinsights.com</p>
 
@@ -506,6 +506,10 @@ Please note that manually closing a session is not required, since it will be cl
 <td>Request successful</td>
 </tr>
 </tbody></table>
+
+<aside class="notice">
+Please note that if even only one of the companies in the batch does not complain with the request format (for example, missing the id property), the whole batch will be rejected. 
+</aside>
 <h1 id='payloads'>Payloads</h1><h2 id='company-processing-payload'>Company Processing Payload</h2>
 <p>This is the payload format to be used when requesting the processing of a list of companies.</p>
 
