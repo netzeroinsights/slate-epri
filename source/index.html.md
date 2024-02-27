@@ -109,7 +109,7 @@ Please note that manually closing a session is not required, since it will be cl
 curl -v --cookie 'JSESSIONID=EXAMPLE_SESSION_ID' \
 -X POST 'https://api.netzeroinsights.com/epri/process' \
 -H 'Content-Type: application/json' \                 
--d '{"companies":[{"id":"13579","name":"Net Zero Insights","website":"netzeroinsights.com","linkedIn":"https://www.linkedin.com/company/netzeroinsights","text":"Some example text"},{"id":"24680","name":"Example company","website":"example.com","linkedIn":"https://www.linkedin.com/company/example","text":"Some example text"}]}'
+-d '{"batchJobId": 12345, "companies":[{"id":"13579","name":"Net Zero Insights","website":"netzeroinsights.com","linkedIn":"https://www.linkedin.com/company/netzeroinsights","text":"Some example text"},{"id":"24680","name":"Example company","website":"example.com","linkedIn":"https://www.linkedin.com/company/example","text":"Some example text"}]}'
 ```
 
 To request the processing of a list of companies you should use the following endpoint:
@@ -135,9 +135,10 @@ Please note that if even only one of the companies in the batch does not complai
 
 This is the payload format to be used when requesting the processing of a list of companies.
 
-| Parameter name      | Parameter type              | Description                           |
-|---------------------|-----------------------------|---------------------------------------|
-| companies           | list of [Company](#company) | The list of companies to be processed |
+| Parameter name | Parameter type              | Description                           |
+|----------------|-----------------------------|---------------------------------------|
+| batchJobId     | number                      | ID assigned to the batch of companies |
+| companies      | list of [Company](#company) | The list of companies to be processed |
 
 ## Company
 
