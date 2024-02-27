@@ -485,7 +485,7 @@ Please note that manually closing a session is not required, since it will be cl
 <div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-v</span> <span class="nt">--cookie</span> <span class="s1">'JSESSIONID=EXAMPLE_SESSION_ID'</span> <span class="se">\</span>
 <span class="nt">-X</span> POST <span class="s1">'https://api.netzeroinsights.com/epri/process'</span> <span class="se">\</span>
 <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\ </span>                
-<span class="nt">-d</span> <span class="s1">'{"companies":[{"id":"13579","name":"Net Zero Insights","website":"netzeroinsights.com","linkedIn":"https://www.linkedin.com/company/netzeroinsights","text":"Some example text"},{"id":"24680","name":"Example company","website":"example.com","linkedIn":"https://www.linkedin.com/company/example","text":"Some example text"}]}'</span>
+<span class="nt">-d</span> <span class="s1">'{"batchJobId": 12345, "companies":[{"id":"13579","name":"Net Zero Insights","website":"netzeroinsights.com","linkedIn":"https://www.linkedin.com/company/netzeroinsights","text":"Some example text"},{"id":"24680","name":"Example company","website":"example.com","linkedIn":"https://www.linkedin.com/company/example","text":"Some example text"}]}'</span>
 </code></pre></div>
 <p>To request the processing of a list of companies you should use the following endpoint:</p>
 
@@ -520,6 +520,11 @@ Please note that if even only one of the companies in the batch does not complai
 <th>Description</th>
 </tr>
 </thead><tbody>
+<tr>
+<td>batchJobId</td>
+<td>number</td>
+<td>ID assigned to the batch of companies</td>
+</tr>
 <tr>
 <td>companies</td>
 <td>list of <a href="#company">Company</a></td>
